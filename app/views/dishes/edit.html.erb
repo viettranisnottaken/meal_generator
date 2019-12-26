@@ -1,0 +1,7 @@
+$("#dish-modal-index").html("<%= j render 'dishes/edit', dish: @dish %>");
+$("#dish-modal").modal("show");
+if (<%=  @dish.errors.present?  %>) {
+  $("#dish-modal").on("click", function () {
+      $(".modal-backdrop").fadeOut("fast");
+  });
+}

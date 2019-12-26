@@ -38,8 +38,10 @@ ActiveRecord::Schema.define(version: 2019_12_24_021716) do
 
   create_table "dishes", force: :cascade do |t|
     t.string "name"
+    t.datetime "discarded_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["discarded_at"], name: "index_dishes_on_discarded_at"
   end
 
   create_table "meal_dishes", force: :cascade do |t|
@@ -61,19 +63,27 @@ ActiveRecord::Schema.define(version: 2019_12_24_021716) do
   end
 
   create_table "meals", force: :cascade do |t|
+    t.string "name"
+    t.datetime "discarded_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["discarded_at"], name: "index_meals_on_discarded_at"
   end
 
   create_table "menus", force: :cascade do |t|
+    t.string "name"
+    t.datetime "discarded_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["discarded_at"], name: "index_menus_on_discarded_at"
   end
 
   create_table "types", force: :cascade do |t|
     t.string "name"
+    t.datetime "discarded_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["discarded_at"], name: "index_types_on_discarded_at"
   end
 
 end

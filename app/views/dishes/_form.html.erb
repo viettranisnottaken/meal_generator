@@ -1,0 +1,5 @@
+
+  <%= form_for Dish.new, remote: true do |f| %>
+    <%= f.text_field :name, class: "custom-form", placeholder: t(".name") %>
+    <%= f.submit t(".submit"), class: "btn btn-sm btn-info" %>
+  <% end %>

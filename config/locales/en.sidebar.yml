@@ -1,0 +1,7 @@
+en:
+  layouts:
+    sidebar:
+      dishes: "Dishes"
+      home: "Home"
+      english: "English"
+      vietnamese: "Vietnamese"

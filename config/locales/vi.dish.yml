@@ -1,0 +1,13 @@
+vi:
+  dishes:
+    form:
+      submit: "Nhập"
+      name: "Tên"
+    dishes:
+      edit: "sửa"
+      delete: "xóa"
+    edit:
+      edit: "Chỉnh sửa món"
+      submit: "Nhập"
+    index:
+      dishes_title: "Món Ăn"
