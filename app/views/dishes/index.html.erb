@@ -1,0 +1,15 @@
+<% content_for :title do %>
+  <%= t(".dishes_title") %>
+<% end %>
+
+<div class="row justify-content-center">
+  <div class="col-sm-12">
+    <%= render "form" %>
+  </div>
+  <hr>
+  <div class="col-sm-12" id="dishes">
+    <%= render "dishes/dishes" %>
+  </div>
+</div>
+
+<div id="dish-modal-index"></div>

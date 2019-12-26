@@ -1,0 +1,7 @@
+vi:
+  layouts:
+    sidebar:
+      dishes: "Món ăn"
+      home: "Trang chủ"
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"

@@ -3,6 +3,9 @@ class CreateDishes < ActiveRecord::Migration[5.2]
     create_table :dishes do |t|
       t.string :name
 
+      t.datetime :discarded_at
+      t.index :discarded_at 
+
       t.timestamps
     end
   end

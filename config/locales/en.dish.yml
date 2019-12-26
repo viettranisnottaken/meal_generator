@@ -1,0 +1,13 @@
+en:
+  dishes:
+    form:
+      submit: "Submit"
+      name: "Name"
+    dishes:
+      edit: "edit"
+      delete: "delete"
+    edit:
+      edit: "Edit dish"
+      submit: "Submit"
+    index:
+      dishes_title: "Dishes"
